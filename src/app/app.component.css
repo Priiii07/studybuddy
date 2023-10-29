@@ -1,0 +1,42 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  flex-wrap: wrap;
+  position: fixed;
+}
+
+.nav-container li {
+  display: inline;
+  padding: 0.2rem;
+  margin: 1rem;
+  color: fff;
+}
+
+.nav-list {
+  padding: 0px;
+}
+
+.mode-option {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 5rem 5rem 5rem;
+}
+
+.mode-option > div {
+  width: 10rem;
+  line-height: 10rem;
+  text-align: center;
+  background-color: #03a9f4;
+  color: #ffffff;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+.prompt-input {
+  display: block;
+}
