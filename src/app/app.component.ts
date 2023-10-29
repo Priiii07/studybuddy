@@ -8,13 +8,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'studybuddy';
+  userInput: number = 0;
+  response: any;
+
   constructor(private http: HttpClient) {}
 
   fetchData() {
-    this.http
-      .get('https://jsonplaceholder.typicode.com/posts/1/comments')
-      .subscribe((data) => {
-        console.log(data);
-      });
+    console.log('fetchData method called');
+    const url = `https://jsonplaceholder.typicode.com/posts/${this.userInput}/comments`;
+    this.http.get(url).subscribe((data) => {
+      console.log(data);
+    });
   }
 }

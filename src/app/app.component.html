@@ -40,6 +40,8 @@
     <section>
       <label for="prompt">Your First Prompt</label><br />
       <textarea
+        [(ngModel)]="userInput"
+        placeholder="Enter input"
         type="text"
         id="prompt"
         name="prompt"
